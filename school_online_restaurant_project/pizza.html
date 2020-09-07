@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    
+    <title>Ranye Pizza</title>
+    <link rel="stylesheet" href="https://cgi.soic.indiana.edu/~dpierz/i211.css">
+    </head>
+    <body>
+        <style>
+            p {
+                font-size: medium;
+            }
+
+            h1 {
+                color: white;
+                margin: auto;
+                vertical-align: middle;
+                line-height: 70px;
+            }
+            .title {
+                margin: auto;
+                position: absolute;
+                left: 29%;
+                height: 70px; 
+                width: 600px;
+                background-color: darkred;
+            }
+        </style>
+        <center><img src="pizza.png" alt="logo" height="200" width="300" style="opacity: 0.8;"></center>
+        <div class="title"><h1>Welcome to Ranye Pizza!</h1></div><br>
+        <br>
+        <br>
+        <br>
+
+
+        <p>Start your order. </p>
+        <form method="get" action="pizza1.cgi">
+            <p>Name for Order: <input type="text" name="name"></p>
+            <p>What size would you like?</p>
+                <p><input type="radio" name="size" value="small"> small (10") $8.50 </p>
+                <p><input type="radio" name="size" value="medium"> medium (14") $10.50 </p>
+                <p><input type="radio" name="size" value="large"> large (16") $12.50 </p>
+            <p>What kind of crust would you like? 
+            <select name="crust">   
+                <option>thin</option>
+                <option>traditional</option>
+                <option>deep dish</option>
+            </select></p>
+            <button type="submit"> Next</button>
+        </form>
+    </body>
+</html>
